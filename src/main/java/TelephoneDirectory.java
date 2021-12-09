@@ -15,7 +15,6 @@ public class TelephoneDirectory {
             }
         }
     }
-
     public void showDirectory() {
         System.out.println(surnameNumber);
     }
