@@ -16,15 +16,15 @@
 Консоль использовать только для вывода результатов проверки телефонного справочника.
  */
 
+
 import java.util.*;
 
-public class Main {
+public class main2 {
     public static void main(String[] args) {
         String[] arr = new String[]{"piaget", "relock", "apicad", "armied", "arzava", "asmear", "bemuck", "bjorne",
                 "chicky", "amidid", "darryl", "giglet", "amidid", "petrel",
                 "pleion", "relock", "skiter", "soleus", "spoony", "relock"};
 
-        System.out.println("Задание 1");
         System.out.print("Исходный массив\n");
         for (String str : arr) {
             System.out.print(str + ' ');
@@ -46,25 +46,6 @@ public class Main {
         HashSet<String> set = new HashSet<>();
         Collections.addAll(set, arr);
         System.out.println("Cписок уникальных слов:\n" + set);
-
-
-        System.out.println("-----------------------------------------");
-        System.out.println("Задание 2");
-        TelephoneDirectory directory = new TelephoneDirectory();
-        directory.add("79105623899","Glagolev");
-        directory.add("79999999999","Petrov");
-        directory.add("79655626869","Petrov");
-        directory.add("79656685566","Mixailov");
-        directory.add("79999999999","Mixailov");
-        directory.add("79688995266","Mixailov");
-        directory.add("79684125326","Zaharov");
-        directory.add("77777777777","Petrov");
-        System.out.print("Все номера и абоненты: ");
-        directory.showDirectory();
-        System.out.println("Номера телефонов абонентов с фамилией Петров:");
-        directory.get("Petrov");
-        System.out.println("Номера телефонов абонентов с фамилией Михайлов:");
-        directory.get("Mixailov");
     }
 
 
